@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, initial-scale=1">
+            <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+            <title>Título da História</title>
+        </head>
+    <body>
+        <main>
+            <div class="passo ativo" id="passo-1">
+                <p>Certo dia, estava indo para a escola, quando de repente avistei um circo.</p>
+                <button class="btn-proximo" data-proximo="2">Ir para a escola</button>
+                <button class="btn-proximo" data-proximo="3">Ir para o circo</button>
+            </div>
+            
+            <div class="passo" id="passo-2">
+                <p>Decido continuar meu caminho para a escola.</p>
+                <button class="btn-proximo" data-proximo="4">Continuar indo para a escola</button>
+            </div>
+            
+            <div class="passo" id="passo-3">
+                <p>Decido ir até o circo.</p>
+                <button class="btn-proximo" data-proximo="5">Explorar o circo</button>
+            </div>
+            
+            <div class="passo" id="passo-4">
+                <p>Eu continuo indo para a escola e enfrento a decisão sobre a prova.</p>
+                <button class="btn-proximo" data-proximo="final1">Ir à escola e fazer a prova</button>
+                <button class="btn-proximo" data-proximo="8">Faltar</button>
+            </div>
+            
+            <div class="passo" id="passo-5">
+                <p>Explorando o circo, percebo que o local está totalmente vazio e silencioso.</p>
+                <button class="btn-proximo" data-proximo="9">Entrar no circo</button>
+                <button class="btn-proximo" data-proximo="6">Não entrar</button>
+            </div>
+            
+            <div class="passo" id="passo-6">
+                <p>Eu decido que não é seguro entrar no circo e vou embora.</p>
+                <button class="btn-proximo" data-proximo="finalNeutro">Ir embora</button>
+            </div>
+            
+            <div class="passo" id="passo-8">
+                <p>Eu decido faltar à escola.</p>
+                <button class="btn-proximo" data-proximo="9">Entrar no circo</button>
+            </div>
+            
+            <div class="passo" id="passo-9">
+                <p>Ao entrar no circo, descubro um ambiente macabro e sombrio.</p>
+                <button class="btn-proximo" data-proximo="14">Abrir o baú</button>
+                <button class="btn-proximo" data-proximo="15">Não abrir o baú</button>
+            </div>
+            
+            <div class="passo" id="passo-14">
+                <p>Eu abro o baú e vejo algo horrível: bonecos de palhaço assustadores com rostos macabros.</p>
+                <button class="btn-proximo" data-proximo="16">Pegar um dos bonecos</button>
+                <button class="btn-proximo" data-proximo="finalNeutro">Não pegar e sair</button>
+            </div>
+            
+            <div class="passo" id="passo-15">
+                <p>Decido seguir pelo corredor escuro.</p>
+                <button class="btn-proximo" data-proximo="17">Continuar avançando</button>
+            </div>
+            
+            <div class="passo" id="passo-16">
+                <p>Começo a correr, tentando fugir dos bonecos de palhaço que ganharam vida.</p>
+                <button class="btn-proximo" data-proximo="finalNeutro">Correr e chamar por ajuda</button>
+                <button class="btn-proximo" data-proximo="finalTriste">Me esconder</button>
+            </div>
+            
+            <div class="passo" id="passo-17">
+                <p>Ao seguir pelo corredor, bato em um líquido estranho.</p>
+                <button class="btn-proximo" data-proximo="finalTragico">Beber o líquido</button>
+                <button class="btn-proximo" data-proximo="finalNeutro">Não beber e sair</button>
+            </div>
+            
+            <!-- Finais -->
+            <div class="passo" id="final1">
+                <p>Concluo a prova com sucesso e minha vida segue normalmente.</p>
+            </div>
+            
+            <div class="passo" id="finalTriste">
+                <p>Decido faltar à prova ou sou perseguido pelos bonecos de palhaço. Perco a oportunidade de passar.</p>
+            </div>
+            
+            <div class="passo" id="finalNeutro">
+                <p>Decido ir embora e não explorar o circo ou saio do circo em segurança, mas sem descobrir nada relevante.</p>
+            </div>
+            
+            <div class="passo" id="finalTragico">
+                <p>Ao beber o líquido estranho, sou envenenado e morro.</p>
+            </div>
+            
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

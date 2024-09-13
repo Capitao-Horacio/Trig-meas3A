@@ -1,0 +1,43 @@
+/* Estilos globais */
+body {
+    background-color: #8c00ff; /* Fundo roxo escuro */
+    color: #F0F0F0; /* Texto claro para contraste */
+    font-family: "New Amsterdam", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura da tela inteira */
+    margin: 0;
+}
+
+/* Estilos dos botões */
+button {
+    background-color: #ff00dd; /* Cor de fundo roxa suave */
+    color: rgb(0, 0, 0); /* Texto branco para bom contraste */
+    font-family: inherit; /* Usa a mesma fonte do body */
+    padding: 10px 20px; /* Melhor espaçamento interno */
+    border: 2px solid #fffb00; /* Borda rosa vibrante */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Transição suave */
+}
+
+/* Efeito hover para botões */
+button:hover {
+    background-color: #cc005f; /* Cor de fundo rosa ao passar o mouse */
+    border-color: #fffb00; /* Muda a cor da borda ao passar o mouse */
+}
+
+/* Estilos para os passos */
+.passo {
+    display: none; /* Esconde os passos por padrão */
+}
+
+.passo.ativo {
+    display: block; /* Exibe o passo ativo */
+    padding: 20px;
+    border: 2px solid #fffb00; /* Adiciona uma borda nos "passos" ativos */
+    border-radius: 8px; /* Arredonda os cantos do "passo" ativo */
+    background-color: #000000; /* Cor de fundo suave para o conteúdo */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar o passo */
+}
